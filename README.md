@@ -12,4 +12,4 @@
 
 + Displayed the images tags of each movie after fetching data from TMDB API.
   
-
+![](https://github.com/sarthakking5/Recommender-system/blob/main/images/resultf.gif)
