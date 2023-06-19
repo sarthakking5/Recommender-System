@@ -20,3 +20,5 @@
 **App Framework Requirements**: `pip install -r requirements.txt`\
 **Dataset**: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv\
 **Tmdb API**: https://developer.themoviedb.org/reference/intro/getting-started
+
+## Data Cleaning
