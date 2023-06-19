@@ -51,10 +51,15 @@ For our data to be made more usable certain changes were made to it.
 + Post this a recommend function gives us a list of 5 movies that have the closest distance to the vector of the given movie in the argument.
 +  For deployment, the models were then saved in the pickle format to be further called.
 
-## Building the Streamlit APP
+## Building the Streamlit App
 
 The main goal behind building a Streamlit app was to provide recommended similar movies to the user after they selected a certain movie along with it's poster which was fetched using the Tmdb API.
 
-
++ The recommend function in our app gave the list of five movies with the lowest cosine distance between the images.
++ Using the pickle model the value of the movie id was then fetched from the database.
++ Post fetching the id, the id was then mapped with database available of Tmdb website and the the link of the poster image was extracted from the JSON data     
+  provided by it.
++
++ 
 
 
