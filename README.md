@@ -60,5 +60,6 @@ The main goal behind building a Streamlit app was to provide recommended similar
 + Post fetching the id, the id was then mapped with database available of Tmdb website and the the link of the poster image was extracted from the JSON data provided by it.
 + This data was concatenated with a URL to fetch the image using the Tmdb API.
   
-
+![](https://github.com/sarthakking5/Recommender-system/blob/main/images/result3.png)
+                    Overview of the Streamlit Application Built
 
