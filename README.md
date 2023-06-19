@@ -18,7 +18,25 @@
 
 **Python Version**: 3.11 **Packages Used**: Pandas, Numpy, ast, NLTK, Sklearn, Streamlit, Requests, Pickle\
 **App Framework Requirements**: `pip install -r requirements.txt`\
-**Dataset**: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv\
+**Dataset**: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv \
 **Tmdb API**: https://developer.themoviedb.org/reference/intro/getting-started
 
-## Data Cleaning
+## Data Cleaning and Processing
+
+For our data to be made more usable certain changes were made to it.
+
++ Both datasets were merged on the common column 'title'.
++ As not all columns were usable for our use-case certain columns were selected to make the processing much faster such as:
+    + Genres
+    + Id
+    + Keywords
+    + Overview
+    + Title
+    + Cast
+    + Crew
++ After this rows with missing values were deleted.
++ Many columns were in the form of a dictionary and to make it accessible in the form of a list a function for conversion was added.
++ After conversion the values in the data frame were now iterable and bu further processing relevant names such as characters, directors, and keywords were 
+  extracted.
++
++ 
