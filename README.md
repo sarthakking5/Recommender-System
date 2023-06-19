@@ -63,7 +63,7 @@ The main goal behind building a Streamlit app was to provide recommended similar
 ![](https://github.com/sarthakking5/Recommender-system/blob/main/images/result3.png)
                     Overview of the Streamlit Application Built
 
-## Deployment
+## Productionization
 
 For the deployment, an open-source platform Heroku was used.
 
@@ -71,4 +71,6 @@ Certain files were generated for this purpose such as:
   + ProcFile
   + Setup.sh
   + .gitignore
+  + requirements.txt
 
+Now after creating a new app on the Heroku platform and connecting our GitHub repository with it, the  command `git push heroku master` leads us to the final deployed version of our app.
