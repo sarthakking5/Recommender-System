@@ -58,7 +58,7 @@ The main goal behind building a Streamlit app was to provide recommended similar
 + The recommend function in our app gave the list of five movies with the lowest cosine distance between the images.
 + Using the pickle model the value of the movie id was then fetched from the database.
 + Post fetching the id, the id was then mapped with database available of Tmdb website and the the link of the poster image was extracted from the JSON data provided by it.
-+
-+ 
++ This data was concatenated with a URL to fetch the image using the Tmdb API.
+  
 
 
