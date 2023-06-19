@@ -36,7 +36,12 @@ For our data to be made more usable certain changes were made to it.
     + Crew
 + After this rows with missing values were deleted.
 + Many columns were in the form of a dictionary and to make it accessible in the form of a list a function for conversion was added.
-+ After conversion the values in the data frame were now iterable and bu further processing relevant names such as characters, directors, and keywords were 
++ After conversion the values in the data frame were now iterable and by further processing relevant names such as characters, directors, and keywords were 
   extracted.
-+
-+ 
++ Once the useful values were extracted from the columns cast, crew, keywords, and genres the items in these lists were concatenated to form a new list that was 
+  saved in tags.
++ A new data frame was extracted from the present table which had only three columns id, title, and tags.
+
+## Model Building
+
+
