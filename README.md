@@ -26,7 +26,7 @@
 For our data to be made more usable certain changes were made to it.
 
 + Both datasets were merged on the common column 'title'.
-+ As not all columns were usable for our use-case certain columns were selected to make the processing much faster such as:
++ As not all columns were usable for our use case certain columns were selected to make the processing much faster such as:
     + Genres
     + Id
     + Keywords
@@ -43,5 +43,18 @@ For our data to be made more usable certain changes were made to it.
 + A new data frame was extracted from the present table which had only three columns id, title, and tags.
 
 ## Model Building
+
++ Using the PorterStemmer from NLTK library each word in the column tag was checked to see if there were multiple words with the same root word.
++ Post stemming a CountVectorizer from Sklearn was used to remove stopwords in the English language and to convert it into a vector with 5000 dimensions.
++ Cosine similarity was then used to find distances between these vectors and these distances were then sorted after applying a enumerate function that enabled to 
+  preserve the original index of the vector.
++ Post this a recommend function gives us a list of 5 movies that have the closest distance to the vector of the given movie in the argument.
++  For deployment, the models were then saved in the pickle format to be further called.
+
+## Building the Streamlit APP
+
+The main goal behind building a Streamlit app was to provide recommended similar movies to the user after they selected a certain movie along with it's poster which was fetched using the Tmdb API.
+
+
 
 
